@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+</head>
+<body>
+    <form action="form-echo.php" method="get">
+    USERNAME :
+    <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        pattern="[A-Z]">
+        <br>
+    รหัสนักศึกษา :
+    <input type="text"
+        placeholder="รหัสนักศึกษา"
+        pattern="[0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9]"><br>
+    บ้านเลขที่ :
+    <input type="text"
+    placeholder="บ้านเลขที่"
+        pattern="[0-9]"> <br>
+    รหัสสินค้า :
+        <input type="text"
+        placeholder="รหัสสินค้า"
+        pattern="[A-Z][A-Z][A-Z][0-9][0-9]"><br>
+    ชื่อ :
+        <input type="text"
+        placeholder="ชื่อ"
+        pattern="[ก-ฮ]">
+
+    <p><label>สาขาวิชา:</label>
+    <select name="dept">
+        <option value="">--Please choose an option--</option>
+        <option value="CS">CS</option>
+        <option value="IC">IC</option>
+        <option value="MA">MA</option>
+        <option value="IMI">IMI</option>
+        <option value="AS">AS</option>
+        <option value="AFET">AFET</option>
+    </select>
+    <p><input type="submit" value="Submit">
+    </form>
+</body>
+</html>
